@@ -33,7 +33,6 @@ Vue.component('note', {
             //当前的笔记时间 = 当前的时间戳
             app.notes[this._uid - 1].time = Date.parse(new Date());
 
-
             //赋值本地存储
             localStorage.setItem('notes', JSON.stringify(app.notes));
 
@@ -56,7 +55,6 @@ var app = new Vue({
 
             //光标自动定位到第一个表单
             document.querySelector("textarea").focus();
-
 
             //赋值本地存储
             localStorage.setItem('notes', JSON.stringify(this.notes));
